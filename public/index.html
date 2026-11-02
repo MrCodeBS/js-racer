@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Racer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JS Racer</h1>
+
+    <div id="room-container">
+      <h2>Join a Room</h2>
+      <input type="text" id="roomCodeInput" placeholder="Enter Room Code" />
+      <button id="joinRoomButton">Join Room</button>
+      <h2>Create a Room</h2>
+      <button id="createRoomButton">Create Room</button>
+      <p id="roomCodeDisplay"></p>
+    </div>
+
+    <div id="game-container" style="display: none">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <div>
+        <button id="startButton">Start Race</button>
+      </div>
+      <div class="controls-info">
+        <p>
+          <strong>Controls:</strong> W/↑ = Accelerate | S/↓ = Brake | A/← = Turn
+          Left | D/→ = Turn Right
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "js-racer",
+  "version": "1.0.0",
+  "description": "A simple online multiplayer racing game using Node.js and Socket.IO.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "three": "^0.178.0"
+  }
+}
